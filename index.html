@@ -5,6 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Integridad de Equipos Estáticos — MAN040-B</title>
   <meta name="description" content="Prototipo académico de gestión e inspección de equipos estáticos (ASME B31.3/API 570, ASME VIII-1/API 510, API 650/653, RBI API 580/581).">
+  <!-- Diagnóstico de carga: muestra en pantalla cualquier error que ocurra antes de que la app esté lista
+       (descargas fallidas, errores de Python informados por PyScript, demoras excesivas). -->
+  <script>
+    (function () {
+      function listo() { return document.body && document.body.classList.contains("listo"); }
+      function mostrar(msg) {
+        var el = document.getElementById("carga-error");
+        if (el && !listo()) { el.textContent = msg; }
+      }
+      window.addEventListener("error", function (e) {
+        var t = e.target;
+        if (t && t !== window && (t.src || t.href)) {
+          mostrar("No se pudo descargar: " + (t.src || t.href) +
+                  "\nRevise la conexión a internet o si la red bloquea pyscript.net / cdn.jsdelivr.net.");
+        } else if (e.message) {
+          mostrar("Error: " + e.message);
+        }
+      }, true);
+      window.addEventListener("unhandledrejection", function (e) {
+        var r = e.reason; mostrar("Error: " + ((r && (r.message || r.toString())) || "desconocido"));
+      });
+      var obs = new MutationObserver(function () {
+        if (listo()) { obs.disconnect(); return; }
+        var err = document.querySelector(".py-error");
+        if (err) { mostrar("Error de Python:\n" + err.textContent.slice(-2500)); }
+      });
+      obs.observe(document.documentElement, { childList: true, subtree: true });
+      setTimeout(function () {
+        var el = document.getElementById("carga-lento");
+        if (el && !listo()) { el.hidden = false; }
+      }, 45000);
+    })();
+  </script>
   <!-- PyScript (Pyodide). Versión fijada: probar antes de actualizar. -->
   <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css">
   <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
@@ -18,7 +51,9 @@
       <p>Cargando el motor de cálculo en Python (Pyodide)…</p>
       <div class="barra"><span></span></div>
       <p class="sec">La primera carga puede tardar entre 10 y 30 segundos; luego queda en la caché del navegador.</p>
-      <p id="carga-error" class="carga-error"></p>
+      <p id="carga-lento" class="carga-lento" hidden>Está tardando más de lo normal. Presione <b>F12 → Consola</b>
+        para ver el detalle, o recargue con <b>Ctrl + F5</b>.</p>
+      <pre id="carga-error" class="carga-error"></pre>
     </div>
   </div>
 
