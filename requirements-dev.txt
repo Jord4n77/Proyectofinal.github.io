@@ -1,0 +1,4 @@
+# Verificación local (no se requiere en el navegador: el motor usa solo la biblioteca estándar)
+pytest>=8.0
+pillow>=10       # tools/generar_esquemas.py
+playwright>=1.40 # tools/vista_previa.py (opcional)

@@ -1,0 +1,935 @@
+{
+  "nombre": "Caso demostrativo — Gestión de integridad de equipos estáticos",
+  "plantas": [
+    {
+      "id": "PL-01",
+      "nombre": "Planta Demo Viña del Mar (ficticia)",
+      "areas": [
+        {
+          "id": "A-100",
+          "nombre": "Unidad 100 — Fraccionamiento",
+          "sistemas": [
+            {
+              "id": "S-101",
+              "nombre": "Circuito CIR-100-01 — Nafta",
+              "equipos": [
+                {
+                  "tag": "L-1001",
+                  "descripcion": "Línea de nafta, descarga bombas P-1001 A/B a V-2001",
+                  "familia": "TUBERIA",
+                  "material_id": "A106-B",
+                  "servicio": "Nafta liviana",
+                  "fluido": "Hidrocarburo líquido",
+                  "codigo_diseno": "ASME B31.3",
+                  "codigo_inspeccion": "API 570",
+                  "circuito_inspeccion": "CIR-100-01",
+                  "fecha_puesta_servicio": "2012-01-15",
+                  "diseno": {
+                    "presion_MPa": 5.0,
+                    "temperatura_C": 150.0
+                  },
+                  "operacion": {
+                    "presion_MPa": 4.2,
+                    "temperatura_C": 120.0
+                  },
+                  "parametros": {
+                    "sobreespesor_corrosion_mm": 1.5,
+                    "eficiencia_junta": 1.0,
+                    "dt_margen_anios": 2.0,
+                    "factor_W": 1.0,
+                    "coeficiente_Y": 0.4,
+                    "tolerancia_fabricacion": 0.125,
+                    "t_estructural_mm": 2.8,
+                    "clase_tuberia": 2,
+                    "tolerancia_placa_mm": 0.0,
+                    "regla_rl_menor_4": "CONSERVADORA_1_4",
+                    "diametro_tanque_m": null,
+                    "altura_liquido_diseno_m": null,
+                    "densidad_relativa_G": null,
+                    "eficiencia_junta_servicio": 1.0
+                  },
+                  "documentos": [
+                    {
+                      "id": "ISO-L-1001",
+                      "nombre": "Isométrico L-1001 (tramo recto)",
+                      "tipo": "PNG",
+                      "descripcion": "Esquema académico sin escala; datos ficticios.",
+                      "ruta": "assets/img/L-1001_isometrico.png",
+                      "contenido_base64": null,
+                      "ancho_px": 1200,
+                      "alto_px": 750
+                    }
+                  ],
+                  "componentes": [
+                    {
+                      "id": "L-1001-TR01",
+                      "nombre": "Tramo recto NPS 6 Sch 40",
+                      "tipo": "TRAMO_RECTO",
+                      "t_nom_mm": 7.11,
+                      "diametro_exterior_mm": 168.3,
+                      "nps": "6",
+                      "cedula": "40",
+                      "radio_interior_mm": null,
+                      "numero_virola": null,
+                      "altura_virola_m": null,
+                      "nivel_sobre_fondo_virola_m": null,
+                      "material_id": null,
+                      "t_min_mm_override": null,
+                      "cmls": [
+                        {
+                          "id": "L-1001-CML-01",
+                          "descripcion_ubicacion": "Tramo recto horizontal, descarga de P-1001 A/B",
+                          "convencion": "Posición horaria 12-3-6-9 vista en sentido del flujo; distancia axial desde la soldadura de referencia aguas arriba.",
+                          "posicion_horaria": "6 h",
+                          "distancia_referencia_mm": 1200.0,
+                          "documento_id": "ISO-L-1001",
+                          "marcador_x": 0.192,
+                          "marcador_y": 0.647,
+                          "mediciones": [
+                            {
+                              "id": "L-1001-CML-01-M1",
+                              "fecha": "2018-06-12",
+                              "espesor": 7.02,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "L-1001-CML-01-M2",
+                              "fecha": "2022-06-14",
+                              "espesor": 6.9,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "L-1001-CML-01-M3",
+                              "fecha": "2026-06-16",
+                              "espesor": 6.78,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        },
+                        {
+                          "id": "L-1001-CML-02",
+                          "descripcion_ubicacion": "Aguas abajo de válvula de control FV-1001 (≈ 3D)",
+                          "convencion": "Posición horaria 12-3-6-9 vista en sentido del flujo; distancia axial desde la soldadura de referencia aguas arriba.",
+                          "posicion_horaria": "6 h",
+                          "distancia_referencia_mm": 480.0,
+                          "documento_id": "ISO-L-1001",
+                          "marcador_x": 0.467,
+                          "marcador_y": 0.487,
+                          "mediciones": [
+                            {
+                              "id": "L-1001-CML-02-M1",
+                              "fecha": "2018-06-12",
+                              "espesor": 6.4,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "L-1001-CML-02-M2",
+                              "fecha": "2022-06-14",
+                              "espesor": 5.1,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "L-1001-CML-02-M3",
+                              "fecha": "2026-06-16",
+                              "espesor": 3.45,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "Pérdida acelerada; se recomienda barrido UT.",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        },
+                        {
+                          "id": "L-1001-CML-03",
+                          "descripcion_ubicacion": "Carrete reemplazado en mayo de 2022",
+                          "convencion": "Posición horaria 12-3-6-9 vista en sentido del flujo; distancia axial desde la soldadura de referencia aguas arriba.",
+                          "posicion_horaria": "12 h",
+                          "distancia_referencia_mm": 650.0,
+                          "documento_id": "ISO-L-1001",
+                          "marcador_x": 0.713,
+                          "marcador_y": 0.512,
+                          "mediciones": [
+                            {
+                              "id": "L-1001-CML-03-M1",
+                              "fecha": "2018-06-12",
+                              "espesor": 6.95,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "L-1001-CML-03-M2",
+                              "fecha": "2021-11-08",
+                              "espesor": 4.2,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "Hallazgo en inspección no programada.",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "L-1001-CML-03-M3",
+                              "fecha": "2022-06-14",
+                              "espesor": 7.1,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "Primera medición del carrete nuevo (línea base).",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "L-1001-CML-03-M4",
+                              "fecha": "2026-06-16",
+                              "espesor": 6.95,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": [
+                            {
+                              "id": "L-1001-INT-01",
+                              "fecha": "2022-05-20",
+                              "tipo": "REEMPLAZO",
+                              "descripcion": "Reemplazo de carrete NPS 6 Sch 40 por pérdida localizada.",
+                              "espesor_nuevo_mm": 7.11
+                            }
+                          ]
+                        },
+                        {
+                          "id": "L-1001-CML-04",
+                          "descripcion_ubicacion": "Tramo recto previo a boquilla N1 de V-2001 (punto nuevo 2026)",
+                          "convencion": "Posición horaria 12-3-6-9 vista en sentido del flujo; distancia axial desde la soldadura de referencia aguas arriba.",
+                          "posicion_horaria": "6 h",
+                          "distancia_referencia_mm": 900.0,
+                          "documento_id": "ISO-L-1001",
+                          "marcador_x": 0.823,
+                          "marcador_y": 0.411,
+                          "mediciones": [
+                            {
+                              "id": "L-1001-CML-04-M1",
+                              "fecha": "2026-06-16",
+                              "espesor": 6.98,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. A. Rojas (ficticio)",
+                              "observaciones": "Punto incorporado en 2026.",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        }
+                      ]
+                    }
+                  ],
+                  "rbi": {
+                    "tipo_componente_gff": "TUBERIA",
+                    "gff_1_anio": null,
+                    "confianza_cr": "MEDIA",
+                    "inspecciones": {
+                      "C": 3
+                    },
+                    "puntaje_sistema_gestion": 600,
+                    "factor_ajuste": 1.0,
+                    "area_consecuencia_m2": 150.0,
+                    "consecuencia_economica": 800000.0,
+                    "moneda": "USD",
+                    "tasa_a_usd": null,
+                    "base_valoracion": "Reparación + 3 días de producción diferida; USD de 2026 (ficticio).",
+                    "cml_referencia_id": "L-1001-CML-01",
+                    "justificacion_cml_referencia": "CML-01 representa el adelgazamiento generalizado del circuito. CML-02 presenta erosión-corrosión localizada aguas abajo de FV-1001: mecanismo local fuera del submodelo, gestionado por inspección dirigida y su estado ALERTA.",
+                    "efectividad_propuesta": "B",
+                    "horizonte_plan_anios": 4.0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "S-102",
+              "nombre": "Acumulación de cabeza",
+              "equipos": [
+                {
+                  "tag": "V-2001",
+                  "descripcion": "Acumulador horizontal de nafta con bota de agua",
+                  "familia": "RECIPIENTE",
+                  "material_id": "SA-516-70",
+                  "servicio": "Nafta con agua libre",
+                  "fluido": "Hidrocarburo + agua ácida",
+                  "codigo_diseno": "ASME BPVC Sec. VIII Div. 1",
+                  "codigo_inspeccion": "API 510",
+                  "circuito_inspeccion": null,
+                  "fecha_puesta_servicio": "2008-03-01",
+                  "diseno": {
+                    "presion_MPa": 1.5,
+                    "temperatura_C": 200.0
+                  },
+                  "operacion": {
+                    "presion_MPa": 1.2,
+                    "temperatura_C": 170.0
+                  },
+                  "parametros": {
+                    "sobreespesor_corrosion_mm": 3.0,
+                    "eficiencia_junta": 0.85,
+                    "dt_margen_anios": 2.0,
+                    "factor_W": 1.0,
+                    "coeficiente_Y": 0.4,
+                    "tolerancia_fabricacion": 0.125,
+                    "t_estructural_mm": 0.0,
+                    "clase_tuberia": 2,
+                    "tolerancia_placa_mm": 0.25,
+                    "regla_rl_menor_4": "CONSERVADORA_1_4",
+                    "diametro_tanque_m": null,
+                    "altura_liquido_diseno_m": null,
+                    "densidad_relativa_G": null,
+                    "eficiencia_junta_servicio": 1.0
+                  },
+                  "documentos": [
+                    {
+                      "id": "ESQ-V-2001",
+                      "nombre": "Esquema V-2001 (envolvente cilíndrica)",
+                      "tipo": "PNG",
+                      "descripcion": "Esquema académico sin escala; datos ficticios.",
+                      "ruta": "assets/img/V-2001_esquema.png",
+                      "contenido_base64": null,
+                      "ancho_px": 1200,
+                      "alto_px": 750
+                    }
+                  ],
+                  "componentes": [
+                    {
+                      "id": "V-2001-ENV",
+                      "nombre": "Envolvente cilíndrica Ø int. 1500 mm",
+                      "tipo": "ENVOLVENTE_CILINDRICA",
+                      "t_nom_mm": 16.0,
+                      "diametro_exterior_mm": null,
+                      "nps": null,
+                      "cedula": null,
+                      "radio_interior_mm": 750.0,
+                      "numero_virola": null,
+                      "altura_virola_m": null,
+                      "nivel_sobre_fondo_virola_m": null,
+                      "material_id": null,
+                      "t_min_mm_override": null,
+                      "cmls": [
+                        {
+                          "id": "V-2001-CML-01",
+                          "descripcion_ubicacion": "Envolvente, generatriz superior, centro",
+                          "convencion": "Posición horaria vista desde el cabezal de entrada (lado N1); distancia medida desde la soldadura circunferencial cabezal-envolvente del lado N1.",
+                          "posicion_horaria": "12 h",
+                          "distancia_referencia_mm": 2100.0,
+                          "documento_id": "ESQ-V-2001",
+                          "marcador_x": 0.517,
+                          "marcador_y": 0.32,
+                          "mediciones": [
+                            {
+                              "id": "V-2001-CML-01-M1",
+                              "fecha": "2014-05-20",
+                              "espesor": 15.95,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-01-M2",
+                              "fecha": "2018-06-12",
+                              "espesor": 15.8,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-01-M3",
+                              "fecha": "2022-06-14",
+                              "espesor": 15.62,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-01-M4",
+                              "fecha": "2026-06-16",
+                              "espesor": 15.35,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        },
+                        {
+                          "id": "V-2001-CML-02",
+                          "descripcion_ubicacion": "Envolvente inferior junto a bota, zona interfase agua",
+                          "convencion": "Posición horaria vista desde el cabezal de entrada (lado N1); distancia medida desde la soldadura circunferencial cabezal-envolvente del lado N1.",
+                          "posicion_horaria": "6 h",
+                          "distancia_referencia_mm": 2700.0,
+                          "documento_id": "ESQ-V-2001",
+                          "marcador_x": 0.6,
+                          "marcador_y": 0.607,
+                          "mediciones": [
+                            {
+                              "id": "V-2001-CML-02-M1",
+                              "fecha": "2014-05-20",
+                              "espesor": 14.6,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-02-M2",
+                              "fecha": "2018-06-12",
+                              "espesor": 13.2,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-02-M3",
+                              "fecha": "2022-06-14",
+                              "espesor": 11.4,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-02-M4",
+                              "fecha": "2026-06-16",
+                              "espesor": 9.55,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "Bajo t_min: informar a ingeniería (FFS).",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        },
+                        {
+                          "id": "V-2001-CML-03",
+                          "descripcion_ubicacion": "Envolvente lateral bajo aislación",
+                          "convencion": "Posición horaria vista desde el cabezal de entrada (lado N1); distancia medida desde la soldadura circunferencial cabezal-envolvente del lado N1.",
+                          "posicion_horaria": "3 h",
+                          "distancia_referencia_mm": 1000.0,
+                          "documento_id": "ESQ-V-2001",
+                          "marcador_x": 0.333,
+                          "marcador_y": 0.467,
+                          "mediciones": [
+                            {
+                              "id": "V-2001-CML-03-M1",
+                              "fecha": "2014-05-20",
+                              "espesor": 13.6,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-03-M2",
+                              "fecha": "2018-06-12",
+                              "espesor": 12.4,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-03-M3",
+                              "fecha": "2022-06-14",
+                              "espesor": 11.1,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "Requiere retiro de aislación para medir.",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        },
+                        {
+                          "id": "V-2001-CML-04",
+                          "descripcion_ubicacion": "Envolvente superior junto a boquilla N3",
+                          "convencion": "Posición horaria vista desde el cabezal de entrada (lado N1); distancia medida desde la soldadura circunferencial cabezal-envolvente del lado N1.",
+                          "posicion_horaria": "12 h",
+                          "distancia_referencia_mm": 3300.0,
+                          "documento_id": "ESQ-V-2001",
+                          "marcador_x": 0.75,
+                          "marcador_y": 0.32,
+                          "mediciones": [
+                            {
+                              "id": "V-2001-CML-04-M1",
+                              "fecha": "2014-05-20",
+                              "espesor": 16.0,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-04-M2",
+                              "fecha": "2018-06-12",
+                              "espesor": 15.95,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-04-M3",
+                              "fecha": "2022-06-14",
+                              "espesor": 16.05,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "V-2001-CML-04-M4",
+                              "fecha": "2026-06-16",
+                              "espesor": 16.02,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Insp. C. Muñoz (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        }
+                      ]
+                    }
+                  ],
+                  "rbi": {
+                    "tipo_componente_gff": "RECIPIENTE",
+                    "gff_1_anio": null,
+                    "confianza_cr": "ALTA",
+                    "inspecciones": {
+                      "B": 1,
+                      "C": 3
+                    },
+                    "puntaje_sistema_gestion": 600,
+                    "factor_ajuste": 1.0,
+                    "area_consecuencia_m2": 450.0,
+                    "consecuencia_economica": 1200000000.0,
+                    "moneda": "CLP",
+                    "tasa_a_usd": 0.00105,
+                    "base_valoracion": "Reemplazo de virola + 10 días de lucro cesante; CLP nov-2026; tasa referencial 1 CLP = 0.00105 USD (verificar).",
+                    "cml_referencia_id": null,
+                    "justificacion_cml_referencia": "Se usa la mayor CR del equipo (criterio conservador).",
+                    "efectividad_propuesta": "A",
+                    "horizonte_plan_anios": 2.0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-300",
+          "nombre": "Área 300 — Almacenamiento",
+          "sistemas": [
+            {
+              "id": "S-301",
+              "nombre": "Patio de tanques de diésel",
+              "equipos": [
+                {
+                  "tag": "T-3001",
+                  "descripcion": "Tanque de techo fijo cónico, almacenamiento de diésel",
+                  "familia": "TANQUE",
+                  "material_id": "A36M",
+                  "servicio": "Diésel",
+                  "fluido": "Diésel (G = 0.85)",
+                  "codigo_diseno": "API 650",
+                  "codigo_inspeccion": "API 653",
+                  "circuito_inspeccion": null,
+                  "fecha_puesta_servicio": "2005-04-10",
+                  "diseno": {
+                    "presion_MPa": 0.0,
+                    "temperatura_C": 40.0
+                  },
+                  "operacion": {
+                    "presion_MPa": 0.0,
+                    "temperatura_C": 25.0
+                  },
+                  "parametros": {
+                    "sobreespesor_corrosion_mm": 1.5,
+                    "eficiencia_junta": 1.0,
+                    "dt_margen_anios": 2.0,
+                    "factor_W": 1.0,
+                    "coeficiente_Y": 0.4,
+                    "tolerancia_fabricacion": 0.125,
+                    "t_estructural_mm": 0.0,
+                    "clase_tuberia": 2,
+                    "tolerancia_placa_mm": 0.0,
+                    "regla_rl_menor_4": "CONSERVADORA_1_4",
+                    "diametro_tanque_m": 30.0,
+                    "altura_liquido_diseno_m": 12.0,
+                    "densidad_relativa_G": 0.85,
+                    "eficiencia_junta_servicio": 1.0
+                  },
+                  "documentos": [
+                    {
+                      "id": "ESQ-T-3001",
+                      "nombre": "Elevación T-3001 (virolas del manto)",
+                      "tipo": "PNG",
+                      "descripcion": "Esquema académico sin escala; datos ficticios.",
+                      "ruta": "assets/img/T-3001_elevacion.png",
+                      "contenido_base64": null,
+                      "ancho_px": 1200,
+                      "alto_px": 750
+                    }
+                  ],
+                  "componentes": [
+                    {
+                      "id": "T-3001-V1",
+                      "nombre": "Virola 1 (inferior)",
+                      "tipo": "VIROLA",
+                      "t_nom_mm": 12.0,
+                      "diametro_exterior_mm": null,
+                      "nps": null,
+                      "cedula": null,
+                      "radio_interior_mm": null,
+                      "numero_virola": 1,
+                      "altura_virola_m": 2.0,
+                      "nivel_sobre_fondo_virola_m": 12.0,
+                      "material_id": null,
+                      "t_min_mm_override": null,
+                      "cmls": [
+                        {
+                          "id": "T-3001-CML-01",
+                          "descripcion_ubicacion": "Virola 1, 0°, 300 mm sobre soldadura manto-fondo",
+                          "convencion": "Posición angular en planta, 0° = norte de planta, sentido horario; altura medida desde la soldadura horizontal inferior de la virola.",
+                          "posicion_horaria": "0°",
+                          "distancia_referencia_mm": 300.0,
+                          "documento_id": "ESQ-T-3001",
+                          "marcador_x": 0.3,
+                          "marcador_y": 0.8,
+                          "mediciones": [
+                            {
+                              "id": "T-3001-CML-01-M1",
+                              "fecha": "2016-09-20",
+                              "espesor": 0.4665,
+                              "unidad": "in",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "Registro original del contratista en pulgadas.",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "T-3001-CML-01-M2",
+                              "fecha": "2021-09-14",
+                              "espesor": 11.55,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "T-3001-CML-01-M3",
+                              "fecha": "2026-09-15",
+                              "espesor": 11.25,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        },
+                        {
+                          "id": "T-3001-CML-02",
+                          "descripcion_ubicacion": "Virola 1, 180°, junto a drenaje de agua",
+                          "convencion": "Posición angular en planta, 0° = norte de planta, sentido horario; altura medida desde la soldadura horizontal inferior de la virola.",
+                          "posicion_horaria": "180°",
+                          "distancia_referencia_mm": 250.0,
+                          "documento_id": "ESQ-T-3001",
+                          "marcador_x": 0.575,
+                          "marcador_y": 0.816,
+                          "mediciones": [
+                            {
+                              "id": "T-3001-CML-02-M1",
+                              "fecha": "2016-09-20",
+                              "espesor": 11.7,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "T-3001-CML-02-M2",
+                              "fecha": "2021-09-14",
+                              "espesor": 10.6,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "T-3001-CML-02-M3",
+                              "fecha": "2026-09-15",
+                              "espesor": 9.0,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "T-3001-V2",
+                      "nombre": "Virola 2",
+                      "tipo": "VIROLA",
+                      "t_nom_mm": 10.0,
+                      "diametro_exterior_mm": null,
+                      "nps": null,
+                      "cedula": null,
+                      "radio_interior_mm": null,
+                      "numero_virola": 2,
+                      "altura_virola_m": 2.0,
+                      "nivel_sobre_fondo_virola_m": 10.0,
+                      "material_id": null,
+                      "t_min_mm_override": null,
+                      "cmls": [
+                        {
+                          "id": "T-3001-CML-03",
+                          "descripcion_ubicacion": "Virola 2, 90°, centro de virola",
+                          "convencion": "Posición angular en planta, 0° = norte de planta, sentido horario; altura medida desde la soldadura horizontal inferior de la virola.",
+                          "posicion_horaria": "90°",
+                          "distancia_referencia_mm": 1000.0,
+                          "documento_id": "ESQ-T-3001",
+                          "marcador_x": 0.367,
+                          "marcador_y": 0.684,
+                          "mediciones": [
+                            {
+                              "id": "T-3001-CML-03-M1",
+                              "fecha": "2016-09-20",
+                              "espesor": 9.9,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "T-3001-CML-03-M2",
+                              "fecha": "2021-09-14",
+                              "espesor": 9.8,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "T-3001-CML-03-M3",
+                              "fecha": "2062-09-15",
+                              "espesor": 9.72,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "Fecha digitada erróneamente (debió ser 2026-09-15).",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "T-3001-V3",
+                      "nombre": "Virola 3",
+                      "tipo": "VIROLA",
+                      "t_nom_mm": 8.0,
+                      "diametro_exterior_mm": null,
+                      "nps": null,
+                      "cedula": null,
+                      "radio_interior_mm": null,
+                      "numero_virola": 3,
+                      "altura_virola_m": 2.0,
+                      "nivel_sobre_fondo_virola_m": 8.0,
+                      "material_id": null,
+                      "t_min_mm_override": null,
+                      "cmls": [
+                        {
+                          "id": "T-3001-CML-04",
+                          "descripcion_ubicacion": "Virola 3, 270°, centro de virola",
+                          "convencion": "Posición angular en planta, 0° = norte de planta, sentido horario; altura medida desde la soldadura horizontal inferior de la virola.",
+                          "posicion_horaria": "270°",
+                          "distancia_referencia_mm": 1000.0,
+                          "documento_id": "ESQ-T-3001",
+                          "marcador_x": 0.492,
+                          "marcador_y": 0.58,
+                          "mediciones": [
+                            {
+                              "id": "T-3001-CML-04-M1",
+                              "fecha": "2016-09-20",
+                              "espesor": 7.95,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "T-3001-CML-04-M2",
+                              "fecha": "2021-09-14",
+                              "espesor": 7.97,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            },
+                            {
+                              "id": "T-3001-CML-04-M3",
+                              "fecha": "2026-09-15",
+                              "espesor": 7.98,
+                              "unidad": "mm",
+                              "tecnica": "UT",
+                              "inspector": "Contratista END Ltda. (ficticio)",
+                              "observaciones": "",
+                              "valida": true,
+                              "evento": "NORMAL"
+                            }
+                          ],
+                          "intervenciones": []
+                        }
+                      ]
+                    }
+                  ],
+                  "rbi": {
+                    "tipo_componente_gff": "TANQUE_VIROLA",
+                    "gff_1_anio": null,
+                    "confianza_cr": "MEDIA",
+                    "inspecciones": {
+                      "C": 3
+                    },
+                    "puntaje_sistema_gestion": 600,
+                    "factor_ajuste": 1.0,
+                    "area_consecuencia_m2": 900.0,
+                    "consecuencia_economica": 2500000.0,
+                    "moneda": "USD",
+                    "tasa_a_usd": null,
+                    "base_valoracion": "Limpieza de derrame contenido en dique + reparación de virola; USD de 2026 (ficticio).",
+                    "cml_referencia_id": null,
+                    "justificacion_cml_referencia": "Se usa la mayor CR del equipo (criterio conservador).",
+                    "efectividad_propuesta": "B",
+                    "horizonte_plan_anios": 5.0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fecha_evaluacion": "2026-11-23",
+  "ediciones_normativas": {
+    "ASME B31.3": "2022 (Process Piping)",
+    "ASME BPVC Sec. VIII Div. 1": "2023",
+    "ASME BPVC Sec. II Parte D": "2023 (Tablas 1A, métricas)",
+    "API 650": "13.ª ed. (2020) + adendas",
+    "API 653": "5.ª ed. (2014) + adendas",
+    "API 570": "4.ª ed. (2016) + adendas",
+    "API 510": "11.ª ed. (2022)",
+    "API RP 580": "3.ª ed. (2016)",
+    "API RP 581": "3.ª ed. (2016) + adendas — Parte 1 (planificación), Parte 2 (POF, §4 adelgazamiento)"
+  },
+  "criterios_grupo": {
+    "dt_margen_anios": 2.0,
+    "margen_min_mm": 0.0,
+    "intervalo_cr_desconocida_anios": 2.0
+  },
+  "notas": "Datos ficticios con fines académicos (MAN040-B). Esfuerzos admisibles referenciales: verificar contra las tablas de la edición declarada.",
+  "version_esquema": "1.0"
+}

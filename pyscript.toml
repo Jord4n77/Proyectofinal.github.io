@@ -1,0 +1,13 @@
+# Configuración de PyScript (intérprete Pyodide).
+# No se cargan paquetes externos: el motor usa solo la biblioteca estándar y los
+# gráficos se generan como SVG en Python, para que la página cargue rápido.
+name = "Integridad de Equipos Estáticos"
+
+[files]
+"./src/calc_engine.py" = "./calc_engine.py"
+"./src/models.py" = "./models.py"
+"./src/servicios.py" = "./servicios.py"
+"./src/vistas.py" = "./vistas.py"
+"./src/controlador.py" = "./controlador.py"
+"./tools/validacion_independiente.py" = "./validacion_independiente.py"
+"./data/proyecto_demo.json" = "./proyecto_demo.json"

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Integridad de Equipos Estáticos — MAN040-B</title>
+  <meta name="description" content="Prototipo académico de gestión e inspección de equipos estáticos (ASME B31.3/API 570, ASME VIII-1/API 510, API 650/653, RBI API 580/581).">
+  <!-- PyScript (Pyodide). Versión fijada: probar antes de actualizar. -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css">
+  <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
+  <link rel="stylesheet" href="web/estilos.css">
+</head>
+<body>
+  <div id="carga" class="carga" role="status">
+    <div class="carga-caja">
+      <div class="logo grande">⌀</div>
+      <h1>Integridad de Equipos Estáticos</h1>
+      <p>Cargando el motor de cálculo en Python (Pyodide)…</p>
+      <div class="barra"><span></span></div>
+      <p class="sec">La primera carga puede tardar entre 10 y 30 segundos; luego queda en la caché del navegador.</p>
+      <p id="carga-error" class="carga-error"></p>
+    </div>
+  </div>
+
+  <header id="encabezado" class="encabezado"></header>
+  <div id="mensajes" class="mensajes" aria-live="polite"></div>
+  <div class="cuerpo">
+    <aside id="lateral" class="lateral"></aside>
+    <main id="principal" class="principal"></main>
+  </div>
+
+  <input type="file" id="archivo-proyecto" accept=".json,application/json" hidden>
+
+  <noscript><p class="noscript">Esta aplicación requiere JavaScript habilitado (ejecuta Python con PyScript/Pyodide).</p></noscript>
+  <script type="py" src="web/main.py" config="pyscript.toml"></script>
+</body>
+</html>
