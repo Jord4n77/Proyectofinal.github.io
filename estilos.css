@@ -51,7 +51,14 @@ body.listo .carga { display: none; }
 .barra { height: 4px; background: var(--borde-2); border-radius: 4px; overflow: hidden; margin: 18px 0; }
 .barra span { display: block; width: 35%; height: 100%; background: var(--acento); animation: carga 1.4s ease-in-out infinite; }
 @keyframes carga { 0% { transform: translateX(-100%); } 100% { transform: translateX(300%); } }
-.carga-error { color: var(--bajo); font-weight: 600; }
+.carga-caja { max-width: 720px; }
+.carga-error { color: var(--bajo); font-weight: 600; font-family: var(--mono); font-size: 12px; text-align: left;
+               white-space: pre-wrap; max-height: 45vh; overflow: auto; margin: 0; }
+.carga-error:empty { display: none; }
+.carga-error:not(:empty) { background: var(--bajo-f); border: 1px solid #f1a7a7; border-radius: 8px; padding: 10px 12px; }
+.carga-lento { color: var(--alerta); font-weight: 600; }
+/* Los errores que PyScript agrega a la página quedan visibles sobre la pantalla de carga */
+.py-error { position: relative; z-index: 200; }
 .noscript { padding: 20px; text-align: center; }
 
 /* --------------------------------------------------------------- estructura */
